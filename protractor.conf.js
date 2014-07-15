@@ -20,7 +20,7 @@ exports.config = {
 
     // list of files / patterns to load in the browser
     specs: [
-        'features/**/*.feature'
+        'specs/**/*.feature'
     ],
 
     // Patterns to exclude.
@@ -44,7 +44,7 @@ exports.config = {
     framework: 'cucumber',
 
     cucumberOpts: {
-        require: 'step_definitions',
+        require: 'specs/**/*.steps.js',
         format: 'pretty'
     },
 
